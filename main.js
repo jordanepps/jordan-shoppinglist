@@ -55,7 +55,9 @@ function generateItemElement(item, itemIndex, template) {
       }">${item.name}</span>
       <div class="shopping-item-controls">
         <button class="shopping-item-toggle js-item-toggle">
-            <span class="button-label">check</span>
+            <span class="button-label">${
+              item.checked ? 'uncheck' : 'check'
+            }</span>
         </button>
         <button class="shopping-item-delete js-item-delete">
             <span class="button-label">delete</span>
